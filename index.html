@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{font-family: cursive; margin: 0;padding: 0;box-sizing: border-box; font-size: 19px;}
+        body{background: #000; color: #fff;display: flex;justify-content: center;align-items: center;height: 100vh;}
+        span{color: #009688;}
+    </style>
+</head>
+<body>
+    <h1>I'm a: <span class="text"></span></h1>
+
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        let text = new Typed(".text", {
+            strings: ["Front-end Developer","Back-end Developer","Full-stack Developer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+
+        console.log(text)
+    </script>
+</body>
+</html>
